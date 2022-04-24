@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:padding="45dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".DriverMenuActivity">
+
+        <TextView
+            android:fontFamily="@font/playfair_display_bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/menu_driver"
+            android:textColor="#673AB7"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:layout_marginBottom="26dp"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:fontFamily="@font/inter_regular"
+            android:id="@+id/btnUbahStatus"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Ubah Status Ketersediaan"
+            android:textAllCaps="false"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:background="#673AB7"
+            android:layout_marginBottom="33dp"
+            android:textColor="@color/white"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:fontFamily="@font/inter_regular"
+            android:id="@+id/btnDataCustomer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/tampil_data_driver"
+            android:textAllCaps="false"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:background="#673AB7"
+            android:layout_marginBottom="33dp"
+            android:textColor="@color/white"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:fontFamily="@font/inter_regular"
+            android:id="@+id/btnRiwayatTransaksi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/riwayat_transaksi_driver"
+            android:textAllCaps="false"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:background="#673AB7"
+            android:layout_marginBottom="33dp"
+            android:textColor="@color/white"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:fontFamily="@font/inter_regular"
+            android:id="@+id/btnLogout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/keluar"
+            android:textAllCaps="false"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:background="#E91E63"
+            android:layout_marginBottom="33dp"
+            android:textColor="@color/white"/>
+
+    </LinearLayout>
+
+</layout>

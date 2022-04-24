@@ -1,0 +1,483 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+    <data>
+        <variable
+            name="data"
+            type="com.example.p3l_ajr_0171.entity.Driver" />
+    </data>
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:padding="0dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".customermenu.DataCustomerActivity">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:fontFamily="@font/inter_regular"
+            android:id="@+id/btnBack"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/kembali"
+            android:textAllCaps="false"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:background="#E91E63"
+            android:layout_marginBottom="10dp"
+            android:textColor="@color/white"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:fontFamily="@font/inter_regular"
+            android:id="@+id/btnUpdate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/ubah_data"
+            android:textAllCaps="false"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:background="#673AB7"
+            android:layout_marginBottom="33dp"
+            android:textColor="@color/white"/>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <GridLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:columnCount="2"
+                android:rowCount="19"
+                android:layout_marginStart="7dp"
+                android:rowOrderPreserved="false">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_rowWeight="1"
+                    android:layout_columnWeight="1"
+                    android:layout_marginBottom="2dp"
+                    android:fontFamily="@font/inter_regular"
+                    android:text="@string/id"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:id="@+id/tvIdCust"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_rowWeight="1"
+                    android:fontFamily="@font/inter_regular"
+                    android:layout_columnWeight="1"
+                    android:layout_marginBottom="2dp"
+                    android:layout_marginStart="10dp"
+                    android:textColor="@color/black"
+                    android:text="@{data.idDriverGenerated}"
+                    android:hint="@string/id"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/nama"
+                    android:fontFamily="@font/inter_regular"
+                    android:layout_rowWeight="1"
+                    android:layout_columnWeight="1"
+                    android:layout_marginBottom="2dp"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:id="@+id/tvNama"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:layout_rowWeight="2"
+                    android:layout_columnWeight="1"
+                    android:layout_marginBottom="2dp"
+                    android:layout_marginStart="10dp"
+                    android:fontFamily="@font/inter_regular"
+                    android:textColor="@color/black"
+                    android:text="@{data.namaDrv}"
+                    android:hint="@string/nama"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/inter_regular"
+                    android:text="@string/alamat"
+                    android:layout_rowWeight="1"
+                    android:layout_columnWeight="1"
+                    android:layout_marginBottom="2dp"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:id="@+id/tvAlamat"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_rowWeight="2"
+                    android:layout_columnWeight="1"
+                    android:layout_marginBottom="2dp"
+                    android:layout_marginStart="10dp"
+                    android:fontFamily="@font/inter_regular"
+                    android:textColor="@color/black"
+                    android:text="@{data.alamatDrv}"
+                    android:hint="@string/alamat"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/inter_regular"
+                    android:text="@string/tanggal_lahir"
+                    android:layout_rowWeight="1"
+                    android:layout_columnWeight="1"
+                    android:layout_marginBottom="2dp"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:id="@+id/tvTglh"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_rowWeight="2"
+                    android:layout_columnWeight="1"
+                    android:layout_marginBottom="2dp"
+                    android:layout_marginStart="10dp"
+                    android:fontFamily="@font/inter_regular"
+                    android:textColor="@color/black"
+                    android:text="@{data.tglLahirDrvStr}"
+                    android:hint="@string/tanggal_lahir"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/inter_regular"
+                    android:text="@string/jenis_kelamin"
+                    android:layout_rowWeight="1"
+                    android:layout_columnWeight="1"
+                    android:layout_marginBottom="2dp"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:id="@+id/tvJK"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_rowWeight="1"
+                    android:layout_columnWeight="1"
+                    android:layout_marginBottom="2dp"
+                    android:layout_marginStart="10dp"
+                    android:fontFamily="@font/inter_regular"
+                    android:textColor="@color/black"
+                    android:text="@{data.jenisKelaminDrv}"
+                    android:hint="@string/jenis_kelamin"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/inter_regular"
+                    android:text="@string/email"
+                    android:layout_rowWeight="1"
+                    android:layout_columnWeight="1"
+                    android:layout_marginBottom="2dp"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:id="@+id/tvEmail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_rowWeight="2"
+                    android:layout_columnWeight="1"
+                    android:layout_marginBottom="2dp"
+                    android:layout_marginStart="10dp"
+                    android:fontFamily="@font/inter_regular"
+                    android:textColor="@color/black"
+                    android:text="@{data.emailDrv}"
+                    android:hint="@string/email"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/inter_regular"
+                    android:text="@string/no_telp"
+                    android:layout_rowWeight="1"
+                    android:layout_columnWeight="1"
+                    android:layout_marginBottom="2dp"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:id="@+id/tvTelp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_rowWeight="1"
+                    android:layout_columnWeight="1"
+                    android:layout_marginBottom="2dp"
+                    android:layout_marginStart="10dp"
+                    android:fontFamily="@font/inter_regular"
+                    android:textColor="@color/black"
+                    android:text="@{data.noTelpDrv}"
+                    android:hint="@string/no_telp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/inter_regular"
+                    android:text="@string/password"
+                    android:layout_rowWeight="1"
+                    android:layout_columnWeight="1"
+                    android:layout_marginBottom="2dp"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    />
+
+                <TextView
+                    android:id="@+id/tvPassword"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_rowWeight="1"
+                    android:layout_columnWeight="1"
+                    android:layout_marginBottom="2dp"
+                    android:layout_marginStart="10dp"
+                    android:fontFamily="@font/inter_regular"
+                    android:textColor="@color/black"
+                    android:text="@{data.passwordDrv}"
+                    android:hint="@string/password"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/inter_regular"
+                    android:text="@string/status_dokumen"
+                    android:layout_rowWeight="1"
+                    android:layout_columnWeight="1"
+                    android:layout_marginBottom="2dp"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:id="@+id/tvStatusDokumen"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_rowWeight="1"
+                    android:layout_columnWeight="1"
+                    android:layout_marginBottom="2dp"
+                    android:layout_marginStart="10dp"
+                    android:fontFamily="@font/inter_regular"
+                    android:textColor="@color/black"
+                    android:text=""
+                    android:hint="@string/status_dokumen" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/inter_regular"
+                    android:text="@string/ketersediaan"
+                    android:layout_rowWeight="1"
+                    android:layout_columnWeight="1"
+                    android:layout_marginBottom="2dp"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:id="@+id/tvStatus"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_rowWeight="1"
+                    android:layout_columnWeight="1"
+                    android:layout_marginBottom="2dp"
+                    android:layout_marginStart="10dp"
+                    android:fontFamily="@font/inter_regular"
+                    android:textColor="@color/black"
+                    android:text=""
+                    android:hint="@string/ketersediaan" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/inter_regular"
+                    android:text="@string/bahasa_asing"
+                    android:layout_rowWeight="1"
+                    android:layout_columnWeight="1"
+                    android:layout_marginBottom="2dp"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:id="@+id/tvBahasaAsing"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_rowWeight="1"
+                    android:layout_columnWeight="1"
+                    android:layout_marginBottom="2dp"
+                    android:layout_marginStart="10dp"
+                    android:fontFamily="@font/inter_regular"
+                    android:textColor="@color/black"
+                    android:text=""
+                    android:hint="@string/bahasa_asing" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/inter_regular"
+                    android:text="@string/tarif"
+                    android:layout_rowWeight="1"
+                    android:layout_columnWeight="1"
+                    android:layout_marginBottom="2dp"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:id="@+id/tvTarif"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_rowWeight="2"
+                    android:layout_columnWeight="1"
+                    android:layout_marginBottom="2dp"
+                    android:layout_marginStart="10dp"
+                    android:fontFamily="@font/inter_regular"
+                    android:textColor="@color/black"
+                    android:text="@{data.tarifDrvStr}"
+                    android:hint="@string/tarif" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/inter_regular"
+                    android:text="@string/rerata_rating"
+                    android:layout_rowWeight="1"
+                    android:layout_columnWeight="1"
+                    android:layout_marginBottom="2dp"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:id="@+id/tvRerataRating"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_rowWeight="1"
+                    android:layout_columnWeight="1"
+                    android:layout_marginBottom="2dp"
+                    android:layout_marginStart="10dp"
+                    android:fontFamily="@font/inter_regular"
+                    android:textColor="@color/black"
+                    android:text="@{data.rerataRatingDrvStr}"
+                    android:hint="@string/rerata_rating" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/inter_regular"
+                    android:text="@string/foto"
+                    android:layout_rowWeight="2"
+                    android:layout_columnWeight="2"
+                    android:layout_marginBottom="2dp"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"/>
+
+                <ImageView
+                    android:id="@+id/gbFoto"
+                    android:layout_rowWeight="2"
+                    android:layout_columnWeight="2"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:contentDescription="@string/image"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/inter_regular"
+                    android:text="@string/sim"
+                    android:layout_rowWeight="1"
+                    android:layout_columnWeight="1"
+                    android:layout_marginBottom="2dp"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"/>
+
+                <ImageView
+                    android:id="@+id/gbSim"
+                    android:layout_rowWeight="2"
+                    android:layout_columnWeight="2"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:contentDescription="@string/image"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/inter_regular"
+                    android:text="@string/surat_bebas_napza"
+                    android:layout_rowWeight="1"
+                    android:layout_columnWeight="1"
+                    android:layout_marginBottom="2dp"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"/>
+
+                <ImageView
+                    android:id="@+id/gbBebasNapza"
+                    android:layout_rowWeight="2"
+                    android:layout_columnWeight="2"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:contentDescription="@string/image"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/inter_regular"
+                    android:text="@string/surat_kesehatan_jiwa"
+                    android:layout_rowWeight="1"
+                    android:layout_columnWeight="1"
+                    android:layout_marginBottom="2dp"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"/>
+
+                <ImageView
+                    android:id="@+id/gbKesehatanJiwa"
+                    android:layout_rowWeight="2"
+                    android:layout_columnWeight="2"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:contentDescription="@string/image"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/inter_regular"
+                    android:text="@string/surat_kesehatan_jasmani"
+                    android:layout_rowWeight="1"
+                    android:layout_columnWeight="1"
+                    android:layout_marginBottom="2dp"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"/>
+
+                <ImageView
+                    android:id="@+id/gbKesehatanJasmani"
+                    android:layout_rowWeight="2"
+                    android:layout_columnWeight="2"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:contentDescription="@string/image"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/inter_regular"
+                    android:text="@string/skck"
+                    android:layout_rowWeight="1"
+                    android:layout_columnWeight="1"
+                    android:layout_marginBottom="2dp"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"/>
+
+                <ImageView
+                    android:id="@+id/gbSkck"
+                    android:layout_rowWeight="2"
+                    android:layout_columnWeight="2"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:contentDescription="@string/image"/>
+
+            </GridLayout>
+        </ScrollView>
+    </LinearLayout>
+</layout>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.p3l_ajr_0171">
+
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="ANDROID.PERMISSION.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.P3L_AJR_0171">
+        <activity
+            android:name=".drivermenu.UpdateDriverActivity"
+            android:exported="false" />
+        <activity
+            android:name=".drivermenu.DataDriverActivity"
+            android:exported="false" />
+        <activity
+            android:name=".customermenu.DataCustomerActivity"
+            android:exported="false" />
+        <activity
+            android:name=".customermenu.TransaksiActivity"
+            android:exported="false" />
+        <activity
+            android:name=".customermenu.MobilActivity"
+            android:exported="false" />
+        <activity
+            android:name=".customermenu.PromoActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ManagerMenuActivity"
+            android:exported="false" />
+        <activity
+            android:name=".DriverMenuActivity"
+            android:exported="false" />
+        <activity
+            android:name=".CustomerMenuActivity"
+            android:exported="false" />
+        <activity
+            android:name=".LoginActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <provider
+            android:authorities="${applicationId}.provider"
+            android:name="com.example.p3l_ajr_0171.GenericClassProvider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_paths"/>
+        </provider>
+    </application>
+
+</manifest>

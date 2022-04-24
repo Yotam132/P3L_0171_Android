@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <variable
+            name="data"
+            type="com.example.p3l_ajr_0171.entity.Promo" />
+    </data>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        app:cardCornerRadius="5dp"
+        app:cardUseCompatPadding="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="10dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="7dp"
+                    android:text="@{data.kodePrm}"
+                    android:textStyle="bold"
+                    android:textSize="20sp"
+                    android:textColor="@color/black"
+                    android:layout_marginBottom="5dp"
+                    android:layout_weight="1"/>
+
+            </LinearLayout>
+
+            <GridLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:columnCount="2"
+                android:rowCount="3"
+                android:layout_marginStart="7dp"
+                android:rowOrderPreserved="false">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_rowWeight="1"
+                    android:layout_columnWeight="1"
+                    android:layout_marginBottom="2dp"
+                    android:fontFamily="@font/inter_regular"
+                    android:text="@string/jenis_promo"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:id="@+id/tvJenisPrm"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_rowWeight="1"
+                    android:fontFamily="@font/inter_regular"
+                    android:layout_columnWeight="1"
+                    android:layout_marginBottom="2dp"
+                    android:layout_marginStart="10dp"
+                    android:textColor="@color/black"
+                    android:text="@{data.jenisPrm}"
+                    android:hint="@string/jenis_promo"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/keterangan"
+                    android:fontFamily="@font/inter_regular"
+                    android:layout_rowWeight="1"
+                    android:layout_columnWeight="1"
+                    android:layout_marginBottom="2dp"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:id="@+id/tvKeterangan"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:layout_rowWeight="8"
+                    android:layout_columnWeight="1"
+                    android:layout_marginBottom="2dp"
+                    android:layout_marginStart="10dp"
+                    android:fontFamily="@font/inter_regular"
+                    android:textColor="@color/black"
+                    android:text="@{data.keteranganPrm}"
+                    android:hint="@string/keterangan"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/inter_regular"
+                    android:text="@string/diskon"
+                    android:layout_rowWeight="1"
+                    android:layout_columnWeight="1"
+                    android:layout_marginBottom="2dp"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:id="@+id/tvDiskon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_rowWeight="1"
+                    android:layout_columnWeight="1"
+                    android:layout_marginBottom="2dp"
+                    android:layout_marginStart="10dp"
+                    android:fontFamily="@font/inter_regular"
+                    android:textColor="@color/black"
+                    android:text=""
+                    android:hint="@string/diskon"/>
+
+            </GridLayout>
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+</layout>

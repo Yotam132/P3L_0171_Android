@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Kuliah/Semester_6/1_P3L/Android/app/src/main/res/layout/activity_customer_menu.xml" value="0.19166666666666668" />
+        <entry key="..\:/Kuliah/Semester_6/1_P3L/Android/app/src/main/res/layout/activity_data_customer.xml" value="0.264" />
+        <entry key="..\:/Kuliah/Semester_6/1_P3L/Android/app/src/main/res/layout/activity_data_driver.xml" value="0.22009569377990432" />
+        <entry key="..\:/Kuliah/Semester_6/1_P3L/Android/app/src/main/res/layout/activity_driver_menu.xml" value="0.19166666666666668" />
+        <entry key="..\:/Kuliah/Semester_6/1_P3L/Android/app/src/main/res/layout/activity_login.xml" value="0.2" />
+        <entry key="..\:/Kuliah/Semester_6/1_P3L/Android/app/src/main/res/layout/activity_main.xml" value="0.10280797101449275" />
+        <entry key="..\:/Kuliah/Semester_6/1_P3L/Android/app/src/main/res/layout/activity_manager_menu.xml" value="0.23973941368078175" />
+        <entry key="..\:/Kuliah/Semester_6/1_P3L/Android/app/src/main/res/layout/activity_mobil.xml" value="0.19166666666666668" />
+        <entry key="..\:/Kuliah/Semester_6/1_P3L/Android/app/src/main/res/layout/activity_promo.xml" value="0.19166666666666668" />
+        <entry key="..\:/Kuliah/Semester_6/1_P3L/Android/app/src/main/res/layout/activity_transaksi.xml" value="0.19166666666666668" />
+        <entry key="..\:/Kuliah/Semester_6/1_P3L/Android/app/src/main/res/layout/activity_update_driver.xml" value="0.1" />
+        <entry key="..\:/Kuliah/Semester_6/1_P3L/Android/app/src/main/res/layout/rv_mobil.xml" value="0.264" />
+        <entry key="..\:/Kuliah/Semester_6/1_P3L/Android/app/src/main/res/layout/rv_promo.xml" value="0.486328125" />
+        <entry key="..\:/Kuliah/Semester_6/1_P3L/Android/app/src/main/res/layout/rv_riwayat.xml" value="0.2" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

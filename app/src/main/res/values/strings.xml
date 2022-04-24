@@ -1,0 +1,81 @@
+<resources>
+    <string name="app_name">P3L_AJR_0171</string>
+    <string name="nama_mobil">Nama Mobil</string>
+    <string name="nama_driver">Nama Driver</string>
+    <string name="tanggal_sewa">Mulai Sewa</string>
+    <string name="tanggal_selesai_sewa">Selesai Sewa</string>
+    <string name="metode_pembayaran">Metode Pembayaran</string>
+    <string name="sub_total">Sub Total</string>
+    <string name="nama_pegawai">Nama Pegawai</string>
+    <string name="kode_promo">Kode Promo</string>
+    <string name="tanggal_pengembalian">Pengembalian</string>
+    <string name="status_transaksi">Status Transaksi</string>
+    <string name="total_harga">Total Harga</string>
+    <string name="rating_driver">Rating Driver</string>
+    <string name="rating_perusahaan">Rating Perusahaan</string>
+    <string name="jenis_promo">Jenis Promo</string>
+    <string name="keterangan">Keterangan</string>
+    <string name="diskon">Diskon</string>
+    <string name="nama">Nama</string>
+    <string name="tipe">Tipe</string>
+    <string name="jenis_transmisi">Jenis Transmisi</string>
+    <string name="bahan_bakar">Bahan Bakar</string>
+    <string name="warna">Warna</string>
+    <string name="plat_nomor">Plat Nomor</string>
+    <string name="fasilitas">Fasilitas</string>
+    <string name="harga_sewa">Harga Sewa</string>
+    <string name="image">IMAGE</string>
+    <string name="masuk">Masuk</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="menu_customer">Menu Customer</string>
+    <string name="daftar_promo">Daftar Promo</string>
+    <string name="daftar_mobil">Daftar Mobil</string>
+    <string name="tampil_data_customer">Tampil Data Customer</string>
+    <string name="riwayat_transaksi_customer">Riwayat Transaksi Customer</string>
+    <string name="keluar">Keluar</string>
+    <string name="kembali">Kembali</string>
+    <string name="id">ID</string>
+    <string name="alamat">Alamat</string>
+    <string name="tanggal_lahir">Tanggal Lahir</string>
+    <string name="jenis_kelamin">Jenis Kelamin</string>
+    <string name="no_telp">No. Telp</string>
+    <string name="status_dokumen">Status Dokumen</string>
+    <string name="kartu_pengenal">Kartu Pengenal</string>
+    <string name="sim">SIM</string>
+    <string name="menu_driver">Menu Driver</string>
+    <string name="tampil_data_driver">Tampil Data Driver</string>
+    <string name="riwayat_transaksi_driver">Riwayat Transaksi Driver</string>
+    <string name="ubah_data">Ubah Data</string>
+    <string name="ketersediaan">Ketersediaan</string>
+    <string name="bahasa_asing">Bahasa Asing</string>
+    <string name="tarif">Tarif</string>
+    <string name="rerata_rating">Rerata Rating</string>
+    <string name="foto">Foto</string>
+    <string name="surat_bebas_napza">Surat Bebas Napza</string>
+    <string name="surat_kesehatan_jiwa">Surat Kesehatan Jiwa</string>
+    <string name="surat_kesehatan_jasmani">Surat Kesehatan Jasmani</string>
+    <string name="skck">SKCK</string>
+    <string name="update_data_driver">Update Data Driver</string>
+    <string name="pilih">Pilih</string>
+    <string name="menu_manager">Menu Manager</string>
+    <string name="cetak_laporan_penyewaan_mobil">Cetak Laporan Penyewaan Mobil</string>
+    <string name="cetak_laporan_detail_pendapatan">Cetak Laporan Detail Pendapatan</string>
+    <string name="cetak_laporan_top_5_driver_transaksi_terbanyak">Cetak Laporan Top 5 Driver Transaksi Terbanyak</string>
+    <string name="cetak_laporan_top_5_customer_transaksi_terbanyak">Cetak Laporan Top 5 Customer Transaksi Terbanyak</string>
+    <string name="cetak_laporan_performa_driver">Cetak Laporan Performa Driver</string>
+    <string name="bulan_dan_tahun">Bulan dan Tahun</string>
+    <string-array name="loginsebagai">
+        <item>Customer</item>
+        <item>Driver</item>
+        <item>Manager</item>
+    </string-array>
+    <string-array name="jeniskelamin">
+        <item>Pria</item>
+        <item>Wanita</item>
+    </string-array>
+    <string-array name="bahasaasing">
+        <item>Ya</item>
+        <item>Tidak</item>
+    </string-array>
+</resources>
